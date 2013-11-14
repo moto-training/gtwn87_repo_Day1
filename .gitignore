@@ -1,2 +1,5 @@
 ebin/
 deps/
+.DS_Store
+day1/.DS_Store
+day4/Server_App/erl_crash.dump
