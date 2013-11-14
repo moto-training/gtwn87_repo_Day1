@@ -1,0 +1,64 @@
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.35.0>},
+                       {name,alarm_handler},
+                       {mfargs,{alarm_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.36.0>},
+                       {name,overload},
+                       {mfargs,{overload,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.34.0>},
+                       {name,sasl_safe_sup},
+                       {mfargs,
+                           {supervisor,start_link,
+                               [{local,sasl_safe_sup},sasl,safe]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.37.0>},
+                       {name,release_handler},
+                       {mfargs,{release_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+         application: sasl
+          started_at: nonode@nohost
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,srv_sup}
+             started: [{pid,<0.45.0>},
+                       {name,ets_serv},
+                       {mfargs,{ets_serv,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+          supervisor: {local,srv_sup}
+             started: [{pid,<0.47.0>},
+                       {name,tcp_serv},
+                       {mfargs,{tcp_serv,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 14-Nov-2013::17:42:05 ===
+         application: srv
+          started_at: nonode@nohost
